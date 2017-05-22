@@ -6,9 +6,9 @@ RUN addgroup redis \
 	&& adduser -H -D -s /bin/false -G redis redis
 
 # Patches for Alpine compatibility \
-ENV REDIS_VERSION="3.0.6" \
-	REDIS_DOWNLOAD_URL="http://download.redis.io/releases/redis-3.0.6.tar.gz" \
-	REDIS_DOWNLOAD_SHA1="4b1c7b1201984bca8f7f9c6c58862f6928cf0a25"
+ENV REDIS_VERSION="3.2.9" \
+	REDIS_DOWNLOAD_URL="http://download.redis.io/releases/redis-3.2.9.tar.gz" \
+	REDIS_DOWNLOAD_SHA1="8fad759f28bcb14b94254124d824f1f3ed7b6aa6"
 
 # Download and build redis
 RUN buildDeps='curl tar patch make gcc musl-dev linux-headers' \
