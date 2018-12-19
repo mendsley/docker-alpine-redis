@@ -7,7 +7,7 @@
 #
 # The old Dockerfile remains below for posterity
 ##
-FROM redis:3.2.9-alpine
+FROM redis:alpine
 
 #FROM mendsley/alpine-gosu
 #MAINTAINER Matthew Endsley <mendsley@gmail.com>
